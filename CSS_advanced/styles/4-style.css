@@ -1,0 +1,15 @@
+/* Définir les variables de police dans :root */
+:root {
+  --font-family-base: 'Helvetica Neue', Helvetica, Arial, sans-serif;  /* police de base */
+  --font-family-title: 'Helvetica Neue', Helvetica, Arial, sans-serif;  /* police pour les titres */
+}
+
+/* Appliquer la police de base au body */
+body {
+  font-family: var(--font-family-base);
+}
+
+/* Appliquer la police des titres à tous les niveaux de titres (h1, h2, h3, h4, h5, h6) */
+h1, h2, h3, h4, h5, h6 {
+  font-family: var(--font-family-title);
+}
