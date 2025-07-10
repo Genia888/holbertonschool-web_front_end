@@ -1,0 +1,19 @@
+/* Définir les variables CSS dans :root */
+:root {
+  --color-primary: #d73953;      /* couleur principale */
+  --color-black: #090909;        /* couleur noire */
+  --color-white: #ffffff;        /* couleur blanche */
+  --color-light-grey: #f3f3f3;   /* couleur gris clair */
+  --color-dark-grey: #353535;    /* couleur gris foncé */
+  --text-color: var(--color-black); /* texte en couleur noire */
+}
+
+/* Réinitialiser la couleur des éléments .section-tagline et .card-category à la couleur primaire */
+.section-tagline, .card-category {
+  color: var(--color-primary);
+}
+
+/* Réinitialiser la couleur du body et des liens (anchor) à la couleur du texte */
+body, a {
+  color: var(--text-color);
+}
