@@ -1,3 +1,31 @@
+/* Appliquer un défilement fluide */
+html {
+  scroll-behavior: smooth;
+}
+
+/* Autres styles CSS que tu peux ajouter */
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+/* Exemples de styles pour les autres éléments */
+header {
+  background-color: #333;
+  color: #fff;
+  padding: 10px;
+}
+
+.navbar-menu {
+  list-style: none;
+}
+
+.navbar-menu .nav-item {
+  display: inline-block;
+  margin-right: 20px;
+}
+
 /* Définir la couleur du texte pour le body */
 body {
   color: #161616; /* couleur du texte en gris foncé */
