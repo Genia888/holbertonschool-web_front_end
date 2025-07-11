@@ -675,3 +675,9 @@
       background-color: var(--color-primary);
       width: 100%;
   }
+
+  button {
+  appearance: none;        /* Standard moderne */
+  -webkit-appearance: none; /* Pour Safari/Chrome */
+  -moz-appearance: none;    /* Pour Firefox */
+}

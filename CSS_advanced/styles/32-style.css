@@ -757,3 +757,9 @@
   .card-work:hover .card-title {
       opacity: 1;
   }
+
+button {
+  appearance: none;        /* Standard moderne */
+  -webkit-appearance: none; /* Pour Safari/Chrome */
+  -moz-appearance: none;    /* Pour Firefox */
+}

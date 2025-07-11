@@ -659,3 +659,9 @@
       top: var(--header-logo-link-top);
       left: var(--header-logo-link-left);
   }
+
+  button {
+  appearance: none;        /* Standard moderne */
+  -webkit-appearance: none; /* Pour Safari/Chrome */
+  -moz-appearance: none;    /* Pour Firefox */
+}

@@ -569,3 +569,9 @@
   .social-link > svg {
       fill: var(--text-color);
   }
+
+  button {
+  appearance: none;        /* Standard moderne */
+  -webkit-appearance: none; /* Pour Safari/Chrome */
+  -moz-appearance: none;    /* Pour Firefox */
+}

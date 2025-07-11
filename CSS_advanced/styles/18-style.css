@@ -383,3 +383,9 @@ html {
 .nav-link:hover {
   color: var(--nav-item-link-hover); /* Changer la couleur du lien au survol */
 }
+
+button {
+  appearance: none;        /* Standard moderne */
+  -webkit-appearance: none; /* Pour Safari/Chrome */
+  -moz-appearance: none;    /* Pour Firefox */
+}
