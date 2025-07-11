@@ -24,7 +24,7 @@ html {
   --font-weight-bold: 700;     /* Poids de police gras */
   --section-tagline-transform: uppercase;
   --section-title-margin: 0;         /* Marge du titre de section */
-  --section-title-color: #090909;    /* Couleur du texte du titre de section (noir) */
+  --section-title-color: var(--color-black);    /* Couleur du texte du titre de section (noir) */
   --section-header-align: center;
 }
 
