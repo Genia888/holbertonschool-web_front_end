@@ -1,34 +1,9 @@
-/* Appliquer un défilement fluide */
+/* 1. Appliquer un défilement fluide */
 html {
   scroll-behavior: smooth;
 }
 
-/* Définir la couleur du texte pour le body */
-body {
-  color: #161616; /* couleur du texte en gris foncé */
-}
-
-/* Définir la couleur du texte pour tous les liens (anchor elements) */
-a {
-  color: #161616; /* couleur du texte des liens */
-}
-
-/* Masquer les éléments avec la classe .visually-hidden */
-.visually-hidden {
-  display: none; /* Masquer les éléments */
-}
-
-/* Définir la couleur du texte pour tous les éléments avec la classe .card-category */
-.card-category {
-  color: #D73953; /* couleur spécifique pour la catégorie de carte */
-}
-
-/* Définir la couleur du texte pour tous les éléments avec la classe .section-tagline */
-.section-tagline {
-  color: #D73953; /* couleur spécifique pour le tagline de la section */
-}
-
-/* Définir les variables CSS dans :root */
+/* 2. Définir les couleurs de base */
 :root {
   --color-primary: #d73953;      /* couleur principale */
   --color-black: #090909;        /* couleur noire */
@@ -36,155 +11,90 @@ a {
   --color-light-grey: #f3f3f3;   /* couleur gris clair */
   --color-dark-grey: #353535;    /* couleur gris foncé */
   --text-color: var(--color-black); /* texte en couleur noire */
-}
 
-/* Réinitialiser la couleur des éléments .section-tagline et .card-category à la couleur primaire */
-.section-tagline, .card-category {
-  color: var(--color-primary);
-}
-
-/* Réinitialiser la couleur du body et des liens (anchor) à la couleur du texte */
-body, a {
-  color: var(--text-color);
-}
-
-/* Définir les variables CSS dans :root */
-:root {
-  --color-primary: #d73953;      /* couleur principale */
-  --color-black: #090909;        /* couleur noire */
-  --color-white: #ffffff;        /* couleur blanche */
-  --color-light-grey: #f3f3f3;   /* couleur gris clair */
-  --color-dark-grey: #353535;    /* couleur gris foncé */
-  --text-color: var(--color-black); /* texte en couleur noire */
-}
-
-/* Réinitialiser la couleur des éléments .section-tagline et .card-category à la couleur primaire */
-.section-tagline, .card-category {
-  color: var(--color-primary);
-}
-
-/* Réinitialiser la couleur du body et des liens (anchor) à la couleur du texte */
-body, a {
-  color: var(--text-color);
-}
-
-/* Définir les variables de police dans :root */
-:root {
+  /* Polices */
   --font-family-base: 'Helvetica Neue', Helvetica, Arial, sans-serif;  /* police de base */
-  --font-family-title: 'Helvetica Neue', Helvetica, Arial, sans-serif;  /* police pour les titres */
-}
+  --font-family-title: 'Raleway', 'Helvetica Neue', Helvetica, Arial, sans-serif;  /* police pour les titres */
 
-/* Appliquer la police de base au body */
-body {
-  font-family: var(--font-family-base);
-}
-
-/* Appliquer la police des titres à tous les niveaux de titres (h1, h2, h3, h4, h5, h6) */
-h1, h2, h3, h4, h5, h6 {
-  font-family: var(--font-family-title);
-}
-
-/* Définir les variables de taille de police dans :root */
-:root {
+  /* Taille de la police */
   --font-size-small: 1.2rem;    /* Petite taille de police */
   --font-size-medium: 1.6rem;   /* Taille moyenne de police */
   --font-size-large: 1.8rem;    /* Grande taille de police */
   --font-size-x-large: 2.3rem;  /* Très grande taille de police */
   --font-size-xx-large: 4.8rem; /* Taille extrêmement grande de police */
-}
 
-/* Appliquer un paramètre global de taille de police (62.5%) */
-html {
-  font-size: 62.5%;  /* 1rem = 10px */
-}
-
-/* Appliquer la taille de police moyenne au body */
-body {
-  font-size: var(--font-size-medium);
-}
-
-/* Définir les variables pour le poids de la police */
-:root {
-  --font-weight-regular: 400;  /* Poids de police régulier */
-  --font-weight-bold: 700;     /* Poids de police gras */
-}
-
-/* Appliquer le poids de police régulier au body */
-body {
-  font-weight: var(--font-weight-regular);
-}
-
-/* Appliquer le poids de police gras aux titres (h1, h2, h3, h4, h5, h6) */
-h1, h2, h3, h4, h5, h6 {
-  font-weight: var(--font-weight-bold);
-}
-
-/* Définir les variables pour les polices */
-:root {
-  --font-family-base: 'Open Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;  /* Open Sans comme première police */
-  --font-family-title: 'Raleway', 'Helvetica Neue', Helvetica, Arial, sans-serif; /* Raleway comme première police */
-}
-
-/* Appliquer la police de base (Open Sans) au body */
-body {
-  font-family: var(--font-family-base);
-}
-
-/* Appliquer la police des titres (Raleway) aux éléments h1, h2, h3, h4, h5, h6 */
-h1, h2, h3, h4, h5, h6 {
-  font-family: var(--font-family-title);
-}
-
-/* Définir les variables pour la hauteur de ligne */
-:root {
+  /* Hauteur de ligne */
   --line-height-small: 1.2; /* petite hauteur de ligne */
   --line-height-base: 1.5;  /* hauteur de ligne de base */
   --line-height-big: 1.8;   /* grande hauteur de ligne */
-}
 
-/* Appliquer la hauteur de ligne de base au body */
-body {
-  line-height: var(--line-height-base);
-}
+  /* Poids de la police */
+  --font-weight-regular: 400;  /* Poids de police régulier */
+  --font-weight-bold: 700;     /* Poids de police gras */
 
-/* Supprimer la décoration du texte pour tous les liens */
-a {
-  text-decoration: none;
-}
+  /* Transformation du texte */
+  --section-tagline-transform: uppercase;
 
-/* Définir une nouvelle variable pour l'alignement des titres de section */
-:root {
+  /* Marge et couleur du titre de section */
+  --section-title-margin: 0;         /* Marge du titre de section */
+  --section-title-color: #090909;    /* Couleur du texte du titre de section (noir) */
+
+  /* Alignement des titres de section */
   --section-header-align: center;
 }
 
-/* Appliquer l'alignement horizontal au .section-header */
-.section-header {
-  text-align: var(--section-header-align);
+/* 3. Définir la couleur du texte pour le body */
+body {
+  color: var(--text-color); /* couleur du texte en gris foncé */
+  font-family: var(--font-family-base); /* Appliquer la police de base */
+  font-weight: var(--font-weight-regular); /* Appliquer le poids de police régulier */
+  font-size: var(--font-size-medium); /* Appliquer la taille de police moyenne */
+  line-height: var(--line-height-base); /* Appliquer la hauteur de ligne de base */
 }
 
-/* Définir la variable pour transformer le texte en majuscules */
-:root {
-  --section-tagline-transform: uppercase;
+/* 4. Définir la couleur du texte pour tous les liens (anchor elements) */
+a {
+  color: var(--text-color); /* couleur du texte des liens */
+  text-decoration: none; /* Supprimer la décoration du texte des liens */
 }
 
-/* Appliquer les styles à .section-tagline */
+/* 5. Masquer les éléments avec la classe .visually-hidden */
+.visually-hidden {
+  display: none; /* Masquer les éléments */
+}
+
+/* 6. Définir la couleur du texte pour tous les éléments avec la classe .card-category */
+.card-category {
+  color: var(--color-primary); /* couleur spécifique pour la catégorie de carte */
+}
+
+/* 7. Définir la couleur du texte pour tous les éléments avec la classe .section-tagline */
 .section-tagline {
+  color: var(--color-primary); /* couleur spécifique pour le tagline de la section */
   font-family: var(--font-family-title);        /* Appliquer la police des titres */
   font-weight: var(--font-weight-bold);         /* Appliquer le poids de police gras */
   text-transform: var(--section-tagline-transform); /* Mettre le texte en majuscules */
 }
 
-/* Définir les variables pour la marge et la couleur du titre de section */
-:root {
-  --section-title-margin: 0;         /* Marge du titre de section */
-  --section-title-color: #090909;    /* Couleur du texte du titre de section (noir) */
+/* 8. Appliquer l'alignement horizontal au .section-header */
+.section-header {
+  text-align: var(--section-header-align); /* Centrer les titres de section */
 }
 
-/* Appliquer les styles à .section-title */
+/* 9. Appliquer les styles à .section-title */
 .section-title {
   font-family: var(--font-family-title);       /* Appliquer la police des titres */
   font-size: var(--font-size-xx-large);        /* Appliquer la taille de police extra-large */
   font-weight: var(--font-weight-bold);        /* Appliquer le poids de police gras */
+  margin: var(--section-title-margin);         /* Appliquer la marge */
+  color: var(--section-title-color);           /* Appliquer la couleur du texte */
+}
+
+/* 10. Appliquer les styles à tous les niveaux de titres (h1, h2, h3, h4, h5, h6) */
+h1, h2, h3, h4, h5, h6 {
+  font-family: var(--font-family-title);       /* Appliquer la police des titres */
+  font-weight: var(--font-weight-bold);        /* Appliquer le poids de police gras */
+  font-size: var(--font-size-large);           /* Appliquer la taille de police grande */
   margin: var(--section-title-margin);         /* Appliquer la marge */
   color: var(--section-title-color);           /* Appliquer la couleur du texte */
 }
