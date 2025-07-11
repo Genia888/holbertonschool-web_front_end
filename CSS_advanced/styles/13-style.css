@@ -1,9 +1,8 @@
-/* 1. Appliquer un défilement fluide */
+
 html {
   scroll-behavior: smooth;
 }
 
-/* 2. Définir les couleurs de base */
 :root {
   --color-primary: #d73953;      /* couleur principale */
   --color-black: #090909;        /* couleur noire */
@@ -11,39 +10,24 @@ html {
   --color-light-grey: #f3f3f3;   /* couleur gris clair */
   --color-dark-grey: #353535;    /* couleur gris foncé */
   --text-color: var(--color-black); /* texte en couleur noire */
-
-  /* Polices */
   --font-family-base: 'Helvetica Neue', Helvetica, Arial, sans-serif;  /* police de base */
   --font-family-title: 'Raleway', 'Helvetica Neue', Helvetica, Arial, sans-serif;  /* police pour les titres */
-
-  /* Taille de la police */
   --font-size-small: 1.2rem;    /* Petite taille de police */
   --font-size-medium: 1.6rem;   /* Taille moyenne de police */
   --font-size-large: 1.8rem;    /* Grande taille de police */
   --font-size-x-large: 2.3rem;  /* Très grande taille de police */
   --font-size-xx-large: 4.8rem; /* Taille extrêmement grande de police */
-
-  /* Hauteur de ligne */
   --line-height-small: 1.2; /* petite hauteur de ligne */
   --line-height-base: 1.5;  /* hauteur de ligne de base */
   --line-height-big: 1.8;   /* grande hauteur de ligne */
-
-  /* Poids de la police */
   --font-weight-regular: 400;  /* Poids de police régulier */
   --font-weight-bold: 700;     /* Poids de police gras */
-
-  /* Transformation du texte */
   --section-tagline-transform: uppercase;
-
-  /* Marge et couleur du titre de section */
   --section-title-margin: 0;         /* Marge du titre de section */
   --section-title-color: #090909;    /* Couleur du texte du titre de section (noir) */
-
-  /* Alignement des titres de section */
   --section-header-align: center;
 }
 
-/* 3. Définir la couleur du texte pour le body */
 body {
   color: var(--text-color); /* couleur du texte en gris foncé */
   font-family: var(--font-family-base); /* Appliquer la police de base */
@@ -52,23 +36,14 @@ body {
   line-height: var(--line-height-base); /* Appliquer la hauteur de ligne de base */
 }
 
-/* 4. Définir la couleur du texte pour tous les liens (anchor elements) */
-a {
-  color: var(--text-color); /* couleur du texte des liens */
-  text-decoration: none;     /* Pas de soulignement par défaut */
-}
-
-/* 5. Masquer les éléments avec la classe .visually-hidden */
 .visually-hidden {
   display: none; /* Masquer les éléments */
 }
 
-/* 6. Définir la couleur du texte pour tous les éléments avec la classe .card-category */
 .card-category {
   color: var(--color-primary); /* couleur spécifique pour la catégorie de carte */
 }
 
-/* 7. Définir la couleur du texte pour tous les éléments avec la classe .section-tagline */
 .section-tagline {
   color: var(--color-primary); /* couleur spécifique pour le tagline de la section */
   font-family: var(--font-family-title);        /* Appliquer la police des titres */
@@ -76,12 +51,10 @@ a {
   text-transform: var(--section-tagline-transform); /* Mettre le texte en majuscules */
 }
 
-/* 8. Appliquer l'alignement horizontal au .section-header */
 .section-header {
   text-align: var(--section-header-align); /* Centrer les titres de section */
 }
 
-/* 9. Appliquer les styles à .section-title */
 .section-title {
   font-family: var(--font-family-title);       /* Appliquer la police des titres */
   font-size: var(--font-size-xx-large);        /* Appliquer la taille de police extra-large */
@@ -90,7 +63,6 @@ a {
   color: var(--section-title-color);           /* Appliquer la couleur du texte */
 }
 
-/* 10. Appliquer les styles à tous les niveaux de titres (h1, h2, h3, h4, h5, h6) */
 h1, h2, h3, h4, h5, h6 {
   font-family: var(--font-family-title);       /* Appliquer la police des titres */
   font-weight: var(--font-weight-bold);        /* Appliquer le poids de police gras */
@@ -99,25 +71,19 @@ h1, h2, h3, h4, h5, h6 {
   color: var(--section-title-color);           /* Appliquer la couleur du texte */
 }
 
-/* 11. Pseudo-classes pour les liens */
-
-/* Cibler les liens (anchor elements) uniquement s'ils contiennent un href */
-a[href] {
+a:link {
   color: var(--text-color);  /* Utiliser la couleur du texte de base */
   text-decoration: none;     /* Pas de soulignement par défaut */
 }
 
-/* Cibler l'état 'visited' des liens : appliquer l'italique */
-a[href]:visited {
+a:visited {
   font-style: italic;  /* Mettre en italique le texte des liens visités */
 }
 
-/* Cibler l'état 'hover' des liens : ajouter un soulignement */
-a[href]:hover {
+a:hover {
   text-decoration: underline;  /* Ajouter un soulignement au survol */
 }
 
-/* Cibler l'état 'active' des liens : changer la couleur de fond */
-a[href]:active {
+a:active {
   background-color: var(--color-light-grey);  /* Utiliser la couleur gris clair pour l'arrière-plan */
 }
