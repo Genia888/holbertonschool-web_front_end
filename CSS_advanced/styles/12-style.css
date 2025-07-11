@@ -53,7 +53,7 @@ body {
 }
 
 /* 4. Définir la couleur du texte pour tous les liens (anchor elements) */
-a {
+a:link {
   color: var(--text-color); /* couleur du texte des liens */
   text-decoration: none; /* Supprimer la décoration du texte des liens */
 }
