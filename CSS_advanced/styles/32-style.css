@@ -619,11 +619,11 @@
   }
 
   .button:hover {
-      color: var(--button-hover-color);
-      text-decoration: var(--button-hover-text-decoration);
-      background-color: var(--button-hover-background);
-      transition-duration: var(--transition-duration);
-  }
+    color: var(--button-hover-color);
+    text-decoration: var(--button-hover-text-decoration);
+    background-color: var(--button-hover-background);
+    transition-duration: var(--transition-duration);
+}
 
   .card-testimonial {
       text-align: center;
