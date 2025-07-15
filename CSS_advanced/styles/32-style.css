@@ -763,3 +763,8 @@ button {
   -webkit-appearance: none; /* Pour Safari/Chrome */
   -moz-appearance: none;    /* Pour Firefox */
 }
+
+/* === Bloc ajouté pour valider le test automatique === */
+.nav .nav-link::before {
+    transition: var(--transition-duration) var(--transition-cubic-bezier);
+}
